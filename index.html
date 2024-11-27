@@ -3,28 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinna Võrdleja</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Toodete Hinnad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select, table {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hinna võrdleja: Coop, Rimi ja Grossi Pood</h1>
-    <table id="price-table">
+
+    <h1>Toodete Hinnad</h1>
+
+    <label for="kategooria">Vali kategooria: </label>
+    <select id="kategooria" onchange="showHinnad()">
+        <option value="">Vali...</option>
+        <option value="Piimatooted">Piimatooted</option>
+        <option value="Leivatooted">Leivatooted</option>
+        <option value="Liha">Liha</option>
+        <option value="Kala">Kala</option>
+        <option value="Singid">Singid</option>
+        <option value="Joogid">Joogid</option>
+    </select>
+
+    <table id="tootedTable">
         <thead>
             <tr>
                 <th>Toode</th>
                 <th>Tootja</th>
-                <th>Firma</th>
-                <th>Viimane värskendus</th>
-                <th>Coop hind</th>
-                <th>Rimi hind</th>
-                <th>Grossi hind</th>
-                <th>Soodsaim hind</th>
+                <th>Suurus</th>
+                <th>Parim Hind (€)</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Dynamic rows will be inserted here -->
         </tbody>
     </table>
-    <script src="script.js"></script>
+
+    <script>
+        // Tooted andmed
+        const tooted = [
+            { toode: "Piim 2.5%", tootja: "Tere", suurus: "1L", kategooria: "Piimatooted", parim_hind: 1.20 },
+            { toode: "Piim 3.2%", tootja: "Farmi", suurus: "1L", kategooria: "Piimatooted", parim_hind: 1.35 },
+            { toode: "Kreemikohupiim Vanilje", tootja: "Tere", suurus: "200g", kategooria: "Piimatooted", parim_hind: 0.75 },
+            { toode: "Kreemikohupiim Šokolaad", tootja: "Tere", suurus: "200g", kategooria: "Piimatooted", parim_hind: 0.79 },
+            { toode: "Rukkileib", tootja: "Saare Leib", suurus: "500g", kategooria: "Leivatooted", parim_hind: 1.10 },
+            { toode: "Valge Sai", tootja: "Leibur", suurus: "400g", kategooria: "Leivatooted", parim_hind: 0.85 },
+            { toode: "Kanafilee", tootja: "Tallegg", suurus: "1kg", kategooria: "Liha", parim_hind: 5.50 },
+            { toode: "Sealiha Ribi", tootja: "Rakvere", suurus: "1kg", kategooria: "Liha", parim_hind: 6.50 },
+            { toode: "Lõhefilee", tootja: "M.V. Wool", suurus: "1kg", kategooria: "Kala", parim_hind: 7.99 },
+            { toode: "Forell", tootja: "Kalakombinaat", suurus: "1kg", kategooria: "Kala", parim_hind: 6.99 },
+            { toode: "Keedusink", tootja: "Atria", suurus: "300g", kategooria: "Singid", parim_hind: 2.90 },
+            { toode: "Porgandimahl", tootja: "Valio", suurus: "1L", kategooria: "Joogid", parim_hind: 1.80 }
+        ];
+
+        // Funktsioon, mis kuvab hinnad valitud kategooriale
+        function showHinnad() {
+            const kategooria = document.getElementById('kategooria').value;
+            const tableBody = document.querySelector('#tootedTable tbody');
+            tableBody.innerHTML = '';
+
+            if (kategooria) {
+                const filteredTooted = tooted.filter(toode => toode.kategooria === kategooria);
+                
+                filteredTooted.forEach(toode => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${toode.toode}</td>
+                        <td>${toode.tootja}</td>
+                        <td>${toode.suurus}</td>
+                        <td>${toode.parim_hind.toFixed(2)} €</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            }
+        }
+    </script>
+
 </body>
 </html>
