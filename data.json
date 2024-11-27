@@ -1,8 +1,9 @@
 [
     {
-        "toode": "Piim",
+        "toode": "Piim 2.5%",
         "tootja": "Tere",
         "firma": "Tere AS",
+        "kategooria": "Piimatooted",
         "viimane_värskendus": "27. november 2024",
         "coop_hind": 1.20,
         "rimi_hind": 1.30,
@@ -10,29 +11,120 @@
         "soodsaim": "Coop"
     },
     {
-        "toode": "Sepik",
-        "tootja": "Leibur",
-        "firma": "Leibur AS",
+        "toode": "Piim 3.2%",
+        "tootja": "Farmi",
+        "firma": "Farmi Piimatööstus AS",
+        "kategooria": "Piimatooted",
         "viimane_värskendus": "27. november 2024",
-        "coop_hind": 0.89,
-        "rimi_hind": 0.95,
-        "grossi_hind": 0.92,
+        "coop_hind": 1.35,
+        "rimi_hind": 1.40,
+        "grossi_hind": 1.38,
         "soodsaim": "Coop"
     },
     {
-        "toode": "Sealiha",
+        "toode": "Laktoosivaba piim 1L",
+        "tootja": "Farmi",
+        "firma": "Farmi Piimatööstus AS",
+        "kategooria": "Piimatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 1.50,
+        "rimi_hind": 1.60,
+        "grossi_hind": 1.55,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Kohupiimapasta 250g",
+        "tootja": "Tere",
+        "firma": "Tere AS",
+        "kategooria": "Piimatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 0.75,
+        "rimi_hind": 0.79,
+        "grossi_hind": 0.77,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Maitsega jogurt 300g",
+        "tootja": "Valio",
+        "firma": "Valio Eesti AS",
+        "kategooria": "Piimatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 0.85,
+        "rimi_hind": 0.89,
+        "grossi_hind": 0.87,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Kreemjas kohupiim šokolaadiga 200g",
+        "tootja": "Farmi",
+        "firma": "Farmi Piimatööstus AS",
+        "kategooria": "Piimatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 0.95,
+        "rimi_hind": 1.00,
+        "grossi_hind": 0.98,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Röstsai täistera 400g",
+        "tootja": "Leibur",
+        "firma": "Leibur AS",
+        "kategooria": "Leivatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 1.25,
+        "rimi_hind": 1.30,
+        "grossi_hind": 1.28,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Rukkileib seemnetega 500g",
+        "tootja": "Saare Leib",
+        "firma": "Saare Leib OÜ",
+        "kategooria": "Leivatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 1.45,
+        "rimi_hind": 1.50,
+        "grossi_hind": 1.48,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Mitmeviljasai 400g",
+        "tootja": "Leibur",
+        "firma": "Leibur AS",
+        "kategooria": "Leivatooted",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 1.10,
+        "rimi_hind": 1.15,
+        "grossi_hind": 1.12,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Sealiha hakkliha 500g",
         "tootja": "Rakvere",
         "firma": "Rakvere Lihakombinaat AS",
+        "kategooria": "Liha",
         "viimane_värskendus": "27. november 2024",
         "coop_hind": 3.50,
         "rimi_hind": 3.60,
         "grossi_hind": 3.55,
-        "soodsaim": "Grossi"
+        "soodsaim": "Coop"
     },
     {
-        "toode": "Lõhe",
+        "toode": "Kana kintsuliha 1kg",
+        "tootja": "Tallegg",
+        "firma": "Tallegg AS",
+        "kategooria": "Liha",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 4.50,
+        "rimi_hind": 4.60,
+        "grossi_hind": 4.55,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Lõhefilee 1kg",
         "tootja": "M.V. Wool",
         "firma": "M.V. Wool AS",
+        "kategooria": "Kala",
         "viimane_värskendus": "27. november 2024",
         "coop_hind": 7.99,
         "rimi_hind": 8.20,
@@ -40,13 +132,36 @@
         "soodsaim": "Coop"
     },
     {
-        "toode": "Keedetud sink",
+        "toode": "Forell 1kg",
+        "tootja": "Kalakombinaat",
+        "firma": "Kalakombinaat AS",
+        "kategooria": "Kala",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 6.99,
+        "rimi_hind": 7.20,
+        "grossi_hind": 7.10,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Keedusink 300g",
         "tootja": "Atria",
         "firma": "Atria Eesti AS",
+        "kategooria": "Singid",
         "viimane_värskendus": "27. november 2024",
         "coop_hind": 2.90,
         "rimi_hind": 3.00,
         "grossi_hind": 2.95,
         "soodsaim": "Grossi"
+    },
+    {
+        "toode": "Peekoniribad 250g",
+        "tootja": "Rakvere",
+        "firma": "Rakvere Lihakombinaat AS",
+        "kategooria": "Singid",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 3.50,
+        "rimi_hind": 3.60,
+        "grossi_hind": 3.55,
+        "soodsaim": "Coop"
     }
 ]
