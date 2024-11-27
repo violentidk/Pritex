@@ -1,0 +1,52 @@
+[
+    {
+        "toode": "Piim",
+        "tootja": "Tere",
+        "firma": "Tere AS",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 1.20,
+        "rimi_hind": 1.30,
+        "grossi_hind": 1.25,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Sepik",
+        "tootja": "Leibur",
+        "firma": "Leibur AS",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 0.89,
+        "rimi_hind": 0.95,
+        "grossi_hind": 0.92,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Sealiha",
+        "tootja": "Rakvere",
+        "firma": "Rakvere Lihakombinaat AS",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 3.50,
+        "rimi_hind": 3.60,
+        "grossi_hind": 3.55,
+        "soodsaim": "Grossi"
+    },
+    {
+        "toode": "Lõhe",
+        "tootja": "M.V. Wool",
+        "firma": "M.V. Wool AS",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 7.99,
+        "rimi_hind": 8.20,
+        "grossi_hind": 8.10,
+        "soodsaim": "Coop"
+    },
+    {
+        "toode": "Keedetud sink",
+        "tootja": "Atria",
+        "firma": "Atria Eesti AS",
+        "viimane_värskendus": "27. november 2024",
+        "coop_hind": 2.90,
+        "rimi_hind": 3.00,
+        "grossi_hind": 2.95,
+        "soodsaim": "Grossi"
+    }
+]
